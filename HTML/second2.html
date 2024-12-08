@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-left: 10px;
+        background-color: rgb(83, 148, 192);
+      }
+      .all {
+        display: flex;
+        flex-direction: column;
+      }
+      .divCols {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(121, 139, 228);
+      }
+
+      .item1 {
+        width: 33%;
+        height: 66vw;
+        background-color: rgb(147, 162, 238);
+      }
+      .item {
+        width: 67%;
+      }
+      .bot {
+        height: 33vw;
+      }
+      #linkholder{
+        background-color: rgb(127, 146, 241);
+        a{
+          color: white;
+          text-decoration: none;
+          text-align: left;
+        }
+      }
+      #subholder {
+        padding-left: 20px;
+        background-color: rgb(68, 85, 173);
+      }
+      img {
+        height: 200px;
+      }
+      table {
+        width: 100%;
+        text-align: center;
+      }
+      #even {
+        background-color: rgb(209, 216, 253);
+      }
+      th {
+        text-decoration: solid;
+        background-color: rgb(39, 64, 189);
+        text-align: center;
+        justify-content: space-around;
+      }
+      .bot {
+        text-align: center;
+        p{
+        display: block;
+        text-align: center;
+        color: white;
+        background-color: blue;
+        height: 50px;
+        margin: 0
+    }
+      }
+      hr{
+        border-bottom: 1px solid rgb(147, 162, 238);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="divCols">
+      <div class="item1">
+        <div id="linkholder">
+          <a href="" class="main">link 1</a>
+          <br />
+          <hr />
+          <div id="subholder">
+            <a href="" class="sub">sublink 1</a>
+            <br />
+            <hr />
+            <a href="" class="sub">sublink 2</a>
+            <br />
+            <hr />
+            <a href="" class="sub">sublink 3</a>
+          </div>
+          <a href="" class="main">link 1</a>
+          <br />
+          <hr />
+          <a href="" class="main">link 1</a>
+        </div>
+      </div>
+      <div class="item">
+        <h1>Title 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut
+          cumque, expedita inventore officia deserunt corrupti fuga ad officiis
+          consequatur ducimus quis velit nemo nostrum eaque consectetur harum
+          rem beatae?
+        </p>
+        <img src="asdfgh.jpg" />
+        <h2>Subtitle 1</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+          excepturi, quidem cum impedit assumenda ea ex ad voluptates nulla
+          ipsam, commodi delectus molestiae soluta maxime, maiores vel autem
+          dolores provident.
+        </p>
+        <h2>Subtitle 2</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+          excepturi, quidem cum impedit assumenda ea ex ad voluptates nulla
+          ipsam, commodi delectus molestiae soluta maxime, maiores vel autem
+          dolores provident.
+        </p>
+        <h2>Subtitle 3</h2>
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+        </ol>
+        <table>
+          <th>col1</th>
+          <th>col2</th>
+          <th>col3</th>
+          <tr>
+            <td id="even">11</td>
+            <td id="even">12</td>
+            <td id="even">13</td>
+          </tr>
+          <tr>
+            <td id="odd">11</td>
+            <td id="odd">12</td>
+            <td id="odd">13</td>
+          </tr>
+          <tr>
+            <td id="even">11</td>
+            <td id="even">12</td>
+            <td id="even">13</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="bot">
+      <p>Sample</p>
+      <p>Sample</p>
+      <p>Sample</p>
+    </div>
+  </body>
+</html>

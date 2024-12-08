@@ -1,0 +1,67 @@
+body{
+    margin-left: 10px;
+    background-color: rgb(118, 191, 240);
+}
+#linkholder{
+    a{
+        align-content: space-between;
+        padding-left: 10px;
+        border-bottom: 2px solid rgb(9, 38, 117);
+    }
+}
+#subholder{
+    align-content: space-between;
+    a{
+        padding-left: 10px;
+        border-bottom: 2px solid rgb(9, 38, 117);
+    }
+}
+.main{
+    color: rgb(241, 244, 242);
+}
+.sub{
+    color: rgb(241, 244, 242);
+}
+#titleholder{
+    color: rgb(9, 38, 117);
+    height: 40px;
+    text-emphasis: bold;
+}
+.subtitle{
+    color: rgb(9, 38, 117);
+    display: block;
+    height: 40px;
+}
+table{
+    width: 100%;
+}
+th{
+    text-decoration: solid;
+    background-color: rgb(39, 64, 189);
+    text-align: center;
+    justify-content: space-around;
+}
+td{
+    text-align: center;
+}
+#even{
+    background-color: rgb(209, 216, 253);
+}
+#odd{
+    background-color: rgb(118, 191, 240);
+}
+hr{
+    border-bottom: 2px rgb(4, 104, 37) solid;
+}
+img{
+    height: 200px;
+}
+#samptext{
+    p{
+        display: block;
+        text-align: center;
+        color: white;
+        background-color: blue;
+        height: 50px;
+    }
+}

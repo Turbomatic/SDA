@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+}
+
+form,
+#username,
+#password {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#username, #password {
+  border: 2px solid black;
+  border-radius: 200px;
+}
+
+#submit {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  #password, #username {
+    display: none;
+  }
+  .container {
+    border: 0;
+  }
+  #submit {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .container {
+    border: 0;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container {
+    border: 2px solid blue;
+    background-color: aqua;
+  }
+  #password, #username {
+    background-color: white;
+  }
+}/*# sourceMappingURL=script3_1.css.map */

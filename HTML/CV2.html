@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+      .section-title {
+        border-bottom: 2px solid #ce7414;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        color: #371e8a;
+      }
+      .row {
+        padding: 40px;
+      }
+      .card-header {
+        background-color: #007bff;
+        color: white;
+      }
+      .skills .progress {
+        margin-bottom: 10px;
+      }
+      label {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Robi Topi"/>
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Web Developer"/>
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@example.com"/>
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="+355 68 68 68 686"
+              />
+              <label for="location">Location</label>
+              <input type="text" class="form-control" id="location" placeholder="Located in: Example, Examplia"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title">Professional History</h2>
+            <label for="professional-history">Summary of work experience</label>
+            <textarea
+              class="form-control"
+              id="professional-history"
+              placeholder="Summary of work experience throughout your life"
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="card">
+              <div class="card-header">
+                <label for="job-title">Job Title</label>
+                <input type="text" class="form-control" id="job-title" placeholder="Software Engineer"/>
+                <label for="workplace">Place of work</label>
+                <input type="text" class="form-control" id="workplace" placeholder="SDA"/>
+              </div>
+              <div class="card-body">
+                <label for="work-summary">Summary of work experience</label>
+                <textarea
+                  class="form-control"
+                  id="work-summary"
+                  placeholder="Brief description of work experience"
+                  rows="4"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title">Education</h2>
+            <div class="card">
+              <div class="card-header">
+                <label for="education-institution">Place of Education</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="education-institution"
+                  placeholder="University of Example"
+                />
+                <label for="graduation-date">Graduation Date</label>
+                <input type="date" class="form-control" id="graduation-date"/>
+              </div>
+              <div class="card-body">
+                <label for="academic-courses">Summary of Academic Courses</label>
+                <textarea
+                  class="form-control"
+                  id="academic-courses"
+                  placeholder="List some relevant courses or projects"
+                  rows="4"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title">Skills</h2>
+            <div class="row skills">
+              <div class="col">
+                <label for="skill-1">Skill 1</label>
+                <input type="text" class="form-control" id="skill-1" placeholder="JavaScript"/>
+              </div>
+              <div class="col">
+                <label for="skill-2">Skill 2</label>
+                <input type="text" class="form-control" id="skill-2" placeholder="Angular"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2 class="section-title">Contact</h2>
+            <p>Never hesitate to reach out for any opportunity or questions. Always ready to discuss!</p>
+            <label for="contact-email">Email</label>
+            <input type="email" class="form-control" id="contact-email" placeholder="example@example.com"/>
+            <label for="contact-phone">Phone</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="contact-phone"
+              placeholder="+355 68 68 68 686"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

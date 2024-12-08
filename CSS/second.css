@@ -1,0 +1,43 @@
+body{
+    margin-left: 10px;
+    background-color: rgb(141, 244, 93);
+}
+#linkholder{
+    a{
+        padding-left: 10px;
+    }
+    justify-content:space-around;
+    display: row;
+}
+.main{
+    color: rgb(4, 104, 37);
+}
+.sub{
+    color: rgb(63, 212, 113);
+}
+#titleholder{
+    background-color: rgb(4, 104, 37);
+    height: 40px;
+}
+.subtitle{
+    background-color: rgb(63, 212, 113);
+    display: block;
+    height: 40px;
+
+}
+th{
+    text-decoration: solid;
+    background-color: rgb(4, 104, 37);
+    text-align: center;
+    width: 50px;
+}
+td{
+    border-bottom: 2px rgb(4, 104, 37) solid;
+    text-align: center;
+}
+hr{
+    border-bottom: 2px rgb(4, 104, 37) solid;
+}
+img{
+    height: 200px;
+}
