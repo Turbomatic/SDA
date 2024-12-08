@@ -1,0 +1,65 @@
+<!--                MAIN PAGE               -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      </head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label for="type">MerrJep.AL</label>
+                <select id="type" class="form-control">
+                    <option value="" disabled selected>Zgjidh tipin e makines</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Truck">Truck</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="type">MerrJep.AL</label>
+                <select id="type" class="form-control">
+                    <option value="" disabled selected>Zgjidh marken e makines</option>
+                    <option value="Merc">Mercedes-Benz</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Audi">Audi</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="car_name">Makina</label>
+                    <input type="text" class="form-control"
+                    id="car_name"
+                    placeholder="Car name"
+                    readonly>
+                    <label for="car_manifacturer">Prodhuesi</label>
+                    <input type="text" class="form-control"
+                    id="car_manifacturer"
+                    placeholder="Car Manifacturer"
+                    readonly>
+                </div>
+            </div>
+            <button type="button" class="btn btn-info" id="search_btn">Search</button>
+        </form>
+    </div>
+
+</body>
+</html>
