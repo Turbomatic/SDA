@@ -6,14 +6,12 @@
     <title>Grid Layout</title>
     <style>
       .container {
+        width: 600px;
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr) 1fr;
-        grid-template-rows: 33% 34% 33%;
-        grid-template-areas:
-          "header header header sidebar"
-          "main main . ."
-          "footer footer footer footer";
-        height: 100vh;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 1fr;
+        gap: 10px;
       }
 
       .item {
@@ -24,41 +22,60 @@
       }
 
       .header {
-        grid-area: header;
-        background-color: lightblue;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        background-color: rgb(32, 149, 188);
       }
 
-      .sidebar {
-        grid-area: sidebar;
-        background-color: lightgreen;
+      .header .item {
+        background-color: lightcyan;
       }
 
       .main {
-        grid-area: main;
-        background-color: lightcoral;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        background-color: rgb(223, 37, 37);
+      }
+
+      .main .item {
+        background-color: rgb(255, 182, 193);
       }
 
       .footer {
-        grid-area: footer;
-        background-color: green;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        background-color: rgb(29, 150, 29);
+      }
+
+      .footer .item {
+        background-color: lightyellow;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item header">Header 1</div>
-      <div class="item header">Header 2</div>
-      <div class="item header">Header 3</div>
-      <div class="item sidebar">Sidebar</div>
+      <div class="header">
+        <div class="item">Header 1</div>
+        <div class="item">Header 2</div>
+        <div class="item">Header 3</div>
+        <div class="item">Sidebar</div>
+      </div>
 
-      <div class="item main">Main 1</div>
-      <div class="item main">Main 2</div>
+      <div class="main">
+        <div class="item">Main 1</div>
+        <div class="item">Main 2</div>
+      </div>
 
-      <div class="item footer">Footer 1</div>
-      <div class="item footer">Footer 2</div>
-      <div class="item footer">Footer 3</div>
-      <div class="item footer">Footer 4</div>
-      <div class="item sidebar">Sidebar</div>
+      <div class="footer">
+        <div class="item">Footer 1</div>
+        <div class="item">Footer 2</div>
+        <div class="item">Footer 3</div>
+        <div class="item">Footer 4</div>
+        <div class="item">Sidebar 1</div>
+      </div>
     </div>
   </body>
 </html>
