@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 1fr;
+        grid-template-rows: 33% 34% 33%;
+        grid-template-areas:
+          "header header header sidebar"
+          "main main . ."
+          "footer footer footer footer";
+        height: 100vh;
+      }
+
+      .item {
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: lightblue;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: lightgreen;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: lightcoral;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item header">Header 1</div>
+      <div class="item header">Header 2</div>
+      <div class="item header">Header 3</div>
+      <div class="item sidebar">Sidebar</div>
+
+      <div class="item main">Main 1</div>
+      <div class="item main">Main 2</div>
+
+      <div class="item footer">Footer 1</div>
+      <div class="item footer">Footer 2</div>
+      <div class="item footer">Footer 3</div>
+      <div class="item footer">Footer 4</div>
+      <div class="item sidebar">Sidebar</div>
+    </div>
+  </body>
+</html>

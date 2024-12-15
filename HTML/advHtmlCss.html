@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Rotation</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        position: relative;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box {
+        position: absolute; /* Make boxes overlap */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+      }
+
+      #red {
+        background-color: pink;
+      }
+
+      #green {
+        background-color: rgb(34, 217, 59);
+      }
+
+      #blue {
+        background-color: rgb(237, 18, 212);
+      }
+
+      /* Hover effects for all boxes */
+      .box:hover,
+      .container:hover .box {
+        background-color: blueviolet;
+        box-shadow: 15px 15px 15px greenyellow;
+      }
+
+      #red:hover {
+        animation: rotateBoxRed 4s linear infinite;
+      }
+
+      @keyframes rotateBoxRed {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #green:hover {
+        animation: rotateBoxGreen 2s linear infinite;
+      }
+
+      @keyframes rotateBoxGreen {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg); 
+        }
+      }
+      
+
+      #blue:hover {
+        animation: rotateBoxBlue 3s linear infinite;
+      }
+
+      @keyframes rotateBoxBlue {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(720deg); /* Two full rotations */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="red">box</div>
+      <div class="box" id="green">box</div>
+      <div class="box" id="blue">box</div>
+    </div>
+  </body>
+</html>
