@@ -1,90 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paper</title>
     <style>
-        .container {
-            width: 600px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-rows: 300px 200px 100px;
-            grid-template-columns: 1fr;
-            gap: 10px;
-        }
+      .container {
+        width: 600px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 300px 200px 100px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
 
-        .slider {
-            background-color: lightgray;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            overflow: hidden;
-        }
+      .slider {
+        background-color: lightgray;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        overflow: hidden;
+      }
 
-        .slider img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-            margin: 0 5px;
-        }
+      .slider img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 0 5px;
+      }
 
-        .main {
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: repeat(4,1fr);
-            gap: 5px;
-            padding: 10px;
-            background-color: lightblue;
-        }
+      .main {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        padding: 10px;
+        background-color: lightblue;
+      }
 
-        .main div {
-            background-color: white;
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: center;
-        }
+      .main div {
+        background-color: white;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
 
-        .read-more {
-            background-color: lightgreen;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
+      .footer {
+        background-color: lightgreen;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
 
-        .read-more button {
-            padding: 5px 10px;
-            background-color: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
+      .footer button {
+        padding: 5px 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="slider">
-            <p>Slider Content</p>
-            <img src="/1.jpeg" alt="Image 1">
-            <img src="/2.jpeg" alt="Image 2">
-        </div>
+      <div class="slider">
+        <p>Slider Content</p>
+        <img src="/1.jpeg" alt="Image 1" />
+        <img src="/2.jpeg" alt="Image 2" />
+      </div>
 
-        <div class="main">
-            <div>Line 1</div>
-            <div>Line 2</div>
-            <div>Line 3</div>
-            <div>Line 4</div>
+      <div class="main">
+        <div>Line 1</div>
+        <div>Line 2</div>
+        <div>Line 3</div>
+        <div>Line 4</div>
+      </div>
 
-        </div>
-
-        <div class="read-more">
-            <h2>Title</h2>
-            <button>Read More</button>
-        </div>
+      <div class="footer">
+        <h2>Title</h2>
+        <button>Read More</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
